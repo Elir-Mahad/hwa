@@ -678,3 +678,21 @@ li {
 }
 
 /* Media Queries */
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 834px) {
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 384px) {
+}
