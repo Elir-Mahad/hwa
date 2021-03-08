@@ -362,6 +362,8 @@ li {
 
 .menu .icons {
 	display: flex;
+	justify-content: space-between;
+	width: 15%;
 }
 
 .menu .icons div {
@@ -371,7 +373,6 @@ li {
 
 .menu_icon {
 	width: 2rem;
-	margin-left: 1.5rem;
 }
 
 .menu .icons div p {
@@ -389,6 +390,53 @@ li {
 	color: black;
 	font-size: 1.5rem;
 	padding: 1rem;
+}
+
+/* Drop Down */
+.menu .phone {
+	font-size: 2.5rem;
+	display: none;
+}
+
+.menu .phone li {
+	position: relative;
+}
+
+.menu .phone span {
+	font-size: 15px;
+	padding: 0.5rem;
+	color: black;
+}
+
+.menu .phone li a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.menu .phone li:hover ul.sub-menu,
+.menu .phone li:focus-within ul.sub-menu {
+	display: block;
+}
+
+.menu .phone ul.sub-menu {
+	background: #23322b;
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 125%;
+	left: -1.1rem;
+	right: 0rem;
+}
+
+.menu .phone ul.sub-menu li a {
+	color: white;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.menu .phone ul.sub-menu li:hover,
+.menu .phone ul.sub-menu li:focus-within {
+	border-bottom: 1px solid white;
 }
 
 /* Header/banner */
@@ -685,7 +733,31 @@ li {
 
 /* Media Queries */
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
+	.menu .desk {
+		display: none;
+	}
+
+	.menu .icons {
+		display: none;
+	}
+
+	.menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: distribute;
+		justify-content: space-between;
+	}
+
+	.menu .phone {
+		display: block;
+		padding: 1rem;
+	}
+
+	.menu ul a:hover {
+		background-color: transparent;
+	}
 }
 
 @media (max-width: 834px) {
