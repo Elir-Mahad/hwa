@@ -439,18 +439,24 @@ li {
 .rowtwo,
 .rowthree {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .rowone img,
-.rowtwo img {
-	height: 37.1rem;
-	padding: 1rem;
+.rowtwo img,
+.rowthree img {
+	display: flex;
+	position: relative;
+	width: calc((100% / 3) - 0%);
+	margin: 1%;
 }
 
-.rowthree img {
-	height: 26.3rem;
-	padding: 1rem;
+.rowone .watch {
+	width: 100%;
+}
+
+.rowtwo .laptop {
+	width: 100%;
 }
 
 /* Second section */
